@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 26, 2018 at 03:35 PM
--- Server version: 10.1.29-MariaDB
--- PHP Version: 7.2.0
+-- Generation Time: Aug 08, 2020 at 09:12 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -79,7 +79,9 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `contact`, `city`, `address`) VALUES
 (1, 'Amit Deka', 'amitakon99@gmail.com', 'e78672833e2b8c80e79d286cde6a1c4a', '9090909090', 'Shillong', 'in front of assam house, Dhankheti, Shillong, Meghalaya'),
 (2, 'amit deka', 'amit@deka.com', '0fa624e3ad0ec67fc4f9c75f1015b209', '9898989898', 'nalbari', 'assam'),
-(3, 'Barry Allen', 'barryallen@gmail.com', '0aa42d4addee6016a46d0a29518e402a', '9878987898', 'USA', 'Central City');
+(3, 'Barry Allen', 'barryallen@gmail.com', '0aa42d4addee6016a46d0a29518e402a', '9878987898', 'USA', 'Central City'),
+(4, 'nil sda', 'ab2@ga.com', 'c633a72b46cf1f6897eed76870664344', '9108387634', 'bsbsad', 'asdasda'),
+(5, 'ab dasd', 'abs@abs.com', '02ee03d2893bb4188dca7361d065de76', '9754026420', 'abcs', 'asdsad');
 
 -- --------------------------------------------------------
 
@@ -103,7 +105,14 @@ INSERT INTO `users_items` (`id`, `user_id`, `item_id`, `status`) VALUES
 (3, 1, 3, 'Confirmed'),
 (4, 2, 4, 'Added to cart'),
 (5, 1, 4, 'Confirmed'),
-(6, 1, 6, 'Added to cart');
+(6, 1, 6, 'Added to cart'),
+(8, 4, 4, 'Confirmed'),
+(9, 4, 6, 'Confirmed'),
+(10, 4, 4, 'Confirmed'),
+(11, 4, 4, 'Added to cart'),
+(12, 5, 4, 'Confirmed'),
+(13, 5, 12, 'Confirmed'),
+(14, 5, 11, 'Confirmed');
 
 --
 -- Indexes for dumped tables
@@ -143,13 +152,13 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users_items`
 --
 ALTER TABLE `users_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
